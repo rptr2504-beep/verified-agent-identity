@@ -6,11 +6,11 @@ on:
     inputs:
       agent_name:
         description: 'xelio'
-        required: true
+        required: false
         default: 'xelio'
       agent_description:
         description: 'finder'
-        required: true
+        required: false
         default: 'xelio AI Agent'
 
 jobs:
@@ -39,4 +39,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "xelio", "description": "finder AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "xelio", "description": " xelio AI Agent"}'
